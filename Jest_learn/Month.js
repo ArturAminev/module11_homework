@@ -1,6 +1,11 @@
 function countDown(n){
-  const reverceNumber = n.toString().split('').reverse().join('');
-  return +reverceNumber;
+  if (typeof (n) == "number"){
+    const reverceNumber = n.toString().split('').reverse().join('');
+    return (+reverceNumber);
+  }else{
+    return ("Данные не верны,пожалуйста введите число")
+  }
 }
-countDown(71348)
+countDown(5789)
 module.exports = countDown;
+

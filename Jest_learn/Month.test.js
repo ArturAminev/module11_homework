@@ -9,8 +9,8 @@ describe("reverce number", ()=>
     
     expect (countDown(987)).toBe(789);
   }),
-  it ('reverce number 152 erroneous result 155', () => {
+  it ('checking the function operation with the string', () => {
     
-    expect (countDown(152)).toBe(155);
+    expect (countDown("text")).toBe("Данные не верны,пожалуйста введите число");
   }),
 );
